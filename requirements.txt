@@ -154,10 +154,8 @@ seaborn==0.12.2
 service-identity==23.1.0
 shap==0.42.1
 six==1.16.0
-sklearn==0.0.post5
 slicer==0.0.7
 smmap==5.0.1
-snowflake==0.0.4
 soupsieve==2.5
 squarify==0.4.3
 stack-data==0.6.2
@@ -167,11 +165,6 @@ streamlit-option-menu==0.3.6
 sympy==1.12
 tabulate==0.8.10
 tenacity==8.2.2
-tensorboard==2.13.0
-tensorboard-data-server==0.7.1
-tensorflow==2.13.0
-tensorflow-estimator==2.13.0
-tensorflow-macos==2.13.0
 termcolor==2.3.0
 textsearch==0.0.24
 threadpoolctl==3.1.0
@@ -195,7 +188,7 @@ Werkzeug==2.3.7
 wordcloud==1.9.2
 wrapt==1.15.0
 xarray==2023.7.0
-xgboost==1.7.6
+xgboost==1.5.0
 xlrd==2.0.1
 xyzservices==2023.7.0
 yarl==1.9.2
