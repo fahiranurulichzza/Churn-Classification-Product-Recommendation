@@ -510,19 +510,19 @@ if selected == 'Customer Churn Predictor':
 
         user_data = pd.DataFrame(user_data_dict)
 
-        le_location = joblib.load("models/le_location.joblib")
-        le_device_class = joblib.load("models/le_device_class.joblib")
-        le_payment_method = joblib.load("models/le_payment_method.joblib")
-        le_games_product = joblib.load("models/le_games_product.joblib")
-        le_music_product = joblib.load("models/le_music_product.joblib")
-        le_education_product = joblib.load("models/le_education_product.joblib")
-        le_video_product = joblib.load("models/le_video_product.joblib")
-        le_call_center = joblib.load("models/le_call_center.joblib")
-        le_use_myapp = joblib.load("models/le_use_myapp.joblib")
-        le_internet_service = joblib.load("models/le_internet_service.joblib")
-        scaler_Tenure = joblib.load("models/scaler_Tenure Months.joblib")
-        scaler_CLTV = joblib.load("models/scaler_CLTV (Predicted Thou. IDR).joblib")
-        scaler_Monthly = joblib.load("models/scaler_Monthly Purchase (Thou. IDR).joblib")
+        le_location = joblib.load("models\le_location.joblib")
+        le_device_class = joblib.load("models\le_device_class.joblib")
+        le_payment_method = joblib.load("models\le_payment_method.joblib")
+        le_games_product = joblib.load("models\le_games_product.joblib")
+        le_music_product = joblib.load("models\le_music_product.joblib")
+        le_education_product = joblib.load("models\le_education_product.joblib")
+        le_video_product = joblib.load("models\le_video_product.joblib")
+        le_call_center = joblib.load("models\le_call_center.joblib")
+        le_use_myapp = joblib.load("models\le_use_myapp.joblib")
+        le_internet_service = joblib.load("models\le_internet_service.joblib")
+        scaler_Tenure = joblib.load("models\scaler_Tenure Months.joblib")
+        scaler_CLTV = joblib.load("models\scaler_CLTV (Predicted Thou. IDR).joblib")
+        scaler_Monthly = joblib.load("models\scaler_Monthly Purchase (Thou. IDR).joblib")
 
         categorical_columns = ['Location', 'Device Class', 'Payment Method', 'Games Product', 'Music Product',
                             'Education Product', 'Video Product', 'Call Center', 'Use MyApp', 'Internet Service']
@@ -573,8 +573,8 @@ if selected == 'Customer Churn Predictor':
             
         preprocessed_df = data_preprocessing(user_data)
 
-        model = joblib.load("models/model_xgb.joblib")
-        result_target = joblib.load("models/le_churn_label.joblib")
+        model = joblib.load("models\model_xgb.joblib")
+        result_target = joblib.load("models\le_churn_label.joblib")
 
 
         def prediction(data):
