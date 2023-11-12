@@ -1,0 +1,9 @@
+streamlit
+pandas
+plotly.express
+streamlit_option_menu
+PIL
+babel.numbers
+pickle
+joblib
+numpy
